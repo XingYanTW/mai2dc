@@ -58,3 +58,25 @@ By default, the program runs daily at 12:00 PM (noon) in the 'Asia/Taipei' timez
 
 - `webhookUrl`: Your Discord webhook URL.
 - `avatarUrl`: The avatar URL for the Discord webhook.
+
+## Webhook
+
+1. Go to channel's settings page
+2. Click Integrations 
+
+![](https://github.com/XingYanTW/mai2dc/blob/main/docs/webhook-1.png?raw=true)
+3. Click Webhooks
+
+![](https://github.com/XingYanTW/mai2dc/blob/main/docs/webhook-2.png?raw=true)
+4. Click ![](https://github.com/XingYanTW/mai2dc/blob/main/docs/Webhook-3.png?raw=true)
+
+
+5. Click that you created webhook
+
+![](https://github.com/XingYanTW/mai2dc/blob/main/docs/Webhook-4.png?raw=true)
+6. Click ![](https://github.com/XingYanTW/mai2dc/blob/main/docs/Webhook-5.png?raw=true)
+
+
+7. Replace it at config.yml with `https://discord.com/api/webhooks/your-webhook-id/your-webhook-token`
+
+⚠ Don't Share Your Webhook Url!!! ⚠
