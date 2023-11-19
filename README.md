@@ -15,7 +15,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/XingyanTW/mai2dc.git japanese
+   git clone https://github.com/XingyanTW/mai2dc.git --branch japanese
    ```
 
 2. Navigate to the project directory:
