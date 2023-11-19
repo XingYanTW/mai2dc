@@ -1,5 +1,5 @@
 # Mai2DC Update Checker
-
+[中文](https://github.com/XingYanTW/mai2dc/blob/main/docs/README_ZH.md)
 Mai2DC is a Node.js program that downloads JSON data, compares two JSON files, and posts new updates to Discord.
 (International ver. Only)
 
