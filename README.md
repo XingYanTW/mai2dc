@@ -1,7 +1,7 @@
 # Mai2DC Update Checker
 
 Mai2DC is a Node.js program that downloads JSON data, compares two JSON files, and posts new updates to Discord.
-(International ver. Only)
+(Japanese ver. Only)
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/XingyanTW/mai2dc.git
+   git clone https://github.com/XingyanTW/mai2dc.git japanese
    ```
 
 2. Navigate to the project directory:

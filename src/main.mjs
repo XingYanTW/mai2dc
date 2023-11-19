@@ -46,7 +46,7 @@ const main = async () => {
 
         // Download the new JSON file
         const newFileName = 'src/new.json';
-        const url = 'https://maimai.sega.com/assets/data/index.json';
+        const url = 'https://info-maimai.sega.jp/wp-json/thistheme/v1/articlesRest';
 
         // Download the new JSON file
         const newData = await downloadFile(url, newFileName);

@@ -7,21 +7,24 @@ const postImageToDiscord = async (imageUrl, previousJsonData, config) => {
     try {
         const { webhookUrl, avatarUrl } = config;
 
-        const updateDate = moment(previousJsonData[0].date).format('YYYY-MM-DD');
+
+        const myDate = moment(previousJsonData[0].date, 'YYYY年 MM月 DD日');
+        myDate.add(1, 'days');
+        const updateDate = moment(myDate).format('YYYY-MM-DD');
 
         const embedMessage = {
             embeds: [
                 {
-                    title: 'New Update Found',
-                    description: `Update date: ${updateDate}`,
+                    title: '新しいアップデートがあります',
+                    description: `更新日: ${updateDate}`,
                     color: 4571344,
                     image: { url: imageUrl },
-                    author: { name: 'maimai DX International ver.', icon_url: avatarUrl },
+                    author: { name: 'maimai でらっくす', icon_url: avatarUrl },
                     footer: { text: `Generated at ${moment().format('YYYY-MM-DD')}` },
-                    thumbnail: { url: 'https://maimai.sega.com/assets/img/festival/top/kv_logo.png' },
+                    thumbnail: { url: 'https://maimai.sega.jp/assets/maiHeader/logo.png' },
                 },
             ],
-            username: 'maimai DX International ver.',
+            username: 'maimai でらっくす',
             avatar_url: avatarUrl,
         };
 

@@ -1,19 +1,21 @@
 {
   "name": "mai2dc",
   "version": "1.0.0",
-  "description": "Mai2DC Update Checker",
-  "main": "src/main.mjs",
+  "description": "Maimai DX Update Checker",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/main.mjs"
+    "start": "node src/main.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "XingyanTW",
-  "license": "",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
-    "chalk": "^4.1.0",
-    "moment": "^2.29.1",
-    "moment-timezone": "^0.5.34",
-    "node-schedule": "^2.0.0"
+    "axios": "^1.6.2",
+    "chalk": "^5.3.0",
+    "js-yaml": "^4.1.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "node-schedule": "^2.1.1"
   }
 }

@@ -3,6 +3,7 @@ import fs from 'fs/promises';
 import axios from 'axios';
 import chalk from 'chalk';
 import postImageToDiscord from "./discordPoster.mjs";
+import moment from "moment";
 
 const downloadImages = async (data, config) => {
     try {
@@ -10,8 +11,10 @@ const downloadImages = async (data, config) => {
         await fs.mkdir(imageFolder, { recursive: true });
 
         for (const item of data) {
-            const date = item.date.join('-');
-            const imageUrl = `https://maimai.sega.com/assets/img/download/pop/download/${date}/pop.jpg`;
+            // Extract year, month, and day from the string
+            const myDate = moment(item.date, 'YYYY年 MM月 DD日').toDate();
+            const date = moment(myDate).format('YYYY-MM-DD');
+            const imageUrl = item.thumbnail;
             const imageFileName = `${imageFolder}/${date}_pop.jpg`;
 
             console.log(chalk.cyan(`Downloading image from: ${imageUrl}`));

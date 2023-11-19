@@ -7,7 +7,7 @@ import fs from "fs/promises";
 const downloadFile = async (url, fileName) => {
     try {
         const response = await axios.get(url);
-        await fs.writeFile(fileName, JSON.stringify(response.data, null, 2));
+        await fs.writeFile(fileName, decodeURIComponent(JSON.stringify(response.data, null, 2)));
         console.log(chalk.green(`Downloaded and saved ${fileName}`));
     } catch (error) {
         console.error(chalk.red('Error downloading the file:'), error.message);
