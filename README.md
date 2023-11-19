@@ -39,6 +39,8 @@ Before you begin, ensure you have met the following requirements:
    ```
 
 2. Open `config.yaml` and update the values with your Discord webhook URL and other configurations.
+   
+[Link to example config](https://github.com/XingYanTW/mai2dc/blob/main/src/config.example.yml)
 
 ## Usage
 
