@@ -1,5 +1,4 @@
 # Mai2DC Update Checker
-[中文](https://github.com/XingYanTW/mai2dc/blob/main/docs/README_ZH.md)
 
 Mai2DC is a Node.js program that downloads JSON data, compares two JSON files, and posts new updates to Discord.
 (International ver. Only)
@@ -39,9 +38,13 @@ Before you begin, ensure you have met the following requirements:
    cp config.example.yaml config.yaml
    ```
 
-2. Open `config.yaml` and update the values with your Discord webhook URL and other configurations.
+2. Create a `.env` file:
+
+   ```bash
+   cp .env.example .env
+   ```
    
-[Link to example config](https://github.com/XingYanTW/mai2dc/blob/main/src/config.example.yml)
+3. Edit the configuration file and `.env` file:
 
 ## Usage
 
@@ -62,10 +65,13 @@ By default, the program runs daily at 12:00 PM (noon) in the 'Asia/Taipei' timez
 - `webhookUrl`: Your Discord webhook URL.
 - `avatarUrl`: The avatar URL for the Discord webhook.
 
+## Environment Variables
+- 'WEBHOOKURL': Your Discord webhook URL.
+
 ## Webhook
 
 1. Go to channel's settings page
-2. Click Integrations 
+2. Click Integrations
 
 ![](https://github.com/XingYanTW/mai2dc/blob/main/docs/webhook-1.png?raw=true)
 
@@ -83,6 +89,6 @@ By default, the program runs daily at 12:00 PM (noon) in the 'Asia/Taipei' timez
 6. Click ![](https://github.com/XingYanTW/mai2dc/blob/main/docs/Webhook-5.png?raw=true)
 
 
-7. Replace it at config.yml with `https://discord.com/api/webhooks/your-webhook-id/your-webhook-token`
+7. Replace it at .env with `https://discord.com/api/webhooks/your-webhook-id/your-webhook-token`
 
 ⚠ Don't Share Your Webhook Url With Others!!! ⚠

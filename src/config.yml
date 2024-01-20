@@ -1,0 +1,5 @@
+# Discord webhook avatar URL
+avatarUrl: "https://graph.facebook.com/maimaiDX/picture?type=square"
+
+# Timezone for scheduling (e.g., 'Asia/Taipei')
+timezone: "Asia/Taipei"

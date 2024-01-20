@@ -2,10 +2,13 @@
 import axios from 'axios';
 import chalk from 'chalk';
 import moment from "moment";
+import "dotenv/config.js";
 
 const postImageToDiscord = async (imageUrl, previousJsonData, config) => {
     try {
-        const { webhookUrl, avatarUrl } = config;
+        
+        const { avatarUrl } = config;
+        const webhookUrl = process.env.WEBHOOKURL;
 
         const updateDate = moment(previousJsonData[0].date).format('YYYY-MM-DD');
 
@@ -18,7 +21,7 @@ const postImageToDiscord = async (imageUrl, previousJsonData, config) => {
                     image: { url: imageUrl },
                     author: { name: 'maimai DX International ver.', icon_url: avatarUrl },
                     footer: { text: `Generated at ${moment().format('YYYY-MM-DD')}` },
-                    thumbnail: { url: 'https://maimai.sega.com/assets/img/festival/top/kv_logo.png' },
+                    thumbnail: { url: 'https://maimai.sega.com/assets/img/buddies/top/kv_logo.png' },
                 },
             ],
             username: 'maimai DX International ver.',

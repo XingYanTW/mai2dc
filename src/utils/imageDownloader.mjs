@@ -10,6 +10,14 @@ const downloadImages = async (data, config) => {
         await fs.mkdir(imageFolder, { recursive: true });
 
         for (const item of data) {
+            //Change data month to 2 digits
+            if (item.date[1] < 10) {
+                item.date[1] = '0' + item.date[1];
+            }
+            //Change data day to 2 digits
+            if (item.date[2] < 10) {
+                item.date[2] = '0' + item.date[2];
+            }
             const date = item.date.join('-');
             const imageUrl = `https://maimai.sega.com/assets/img/download/pop/download/${date}/pop.jpg`;
             const imageFileName = `${imageFolder}/${date}_pop.jpg`;
