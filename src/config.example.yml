@@ -1,8 +1,1 @@
-# Discord webhook URL
-webhookUrl: "https://discord.com/api/webhooks/your-webhook-id/your-webhook-token"
 
-# Discord webhook avatar URL (Default link is from the maimaiDX facebook pages)
-avatarUrl: "https://graph.facebook.com/maimaiDX/picture?type=square"
-
-# Timezone for scheduling (e.g., 'Asia/Taipei')
-timezone: "Asia/Taipei"
